@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,600&display=swap');
 
+
 body, html {
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
 	line-height: 1.5rem;
-	color: #FFF;
+	color: rgb(32, 29, 48);
 }
 
 body {
 	font-family: 'Source Serif Pro', serif;
-	background-color: #131313;
+	background-color: #E5E1DA;
+
 }
 
 img {
@@ -25,9 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1::after {
 	content: " ";
-	width: 36px;
-	background: #FFF;
-	height: 3px;
+	width: 400px;
+	background: #bdb4a5;
+	height: 0.05rem;
 	display: block;
 	margin-top: 24px;
 }
@@ -43,14 +45,19 @@ h1::after {
 }
 
 a {
-	color: #4b77a6;
+	color: #578E7E;
 	text-decoration: none;
+}
+
+a:hover {
+	color: #3D0301;
+	text-decoration: underline;
 }
 
 .header-body {
 	text-align: right;
 	padding-top: 5px;
-	background-color: #161617;
+	background-color: #ffffff00;
 	position: relative;
 }
 
@@ -79,7 +86,7 @@ a {
 .top iframe {
 	border: 0;
 	/* Edit this height if you would like the header to be taller */
-	height: 500px;
+	height: 390px;
 	width: 100%
 }
 
@@ -88,7 +95,7 @@ a {
 	margin: auto;
 	margin-top: 60px;
 	box-shadow: 0 0 24px #3d382c1c;
-	background: #161617;
+	background: #F1F0E8;
 	padding: 24px 60px;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -109,29 +116,36 @@ th, td {
 }
 
 th {
-	background: #2e2e39;
+	background: #E5E1DA;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 }
 
 tr {
-	background-color: #161617;
+	background-color: #F1F0E8;
 }
 
 tr:hover {
-	background: #2e2e398F;
+	background: #B3C8CF;
 }
 
 /* my bullshit begins*/
+
 .floating-abel {
   float: right  ;
-  width: 200px;
-  height: 500px;
+  width: 160px; 
+  height: 400px;
   position: relative;
-  margin-right: 480px;
+  margin-right: 520px;
   margin-top: -100px;
   z-index: 1;
-  background-image: url(/images/cain2.png);
+  background-image: url(/images/cain2.png); 
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+
+.prose {
+	text-align: justify;
+	text-justify: inter-word;
 }
