@@ -2,75 +2,75 @@
 
 
 body, html {
-	padding: 0;
-	margin: 0;
-	font-size: 16px;
-	line-height: 1.5rem;
-	color: rgb(32, 29, 48);
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: rgb(32, 29, 48);
 }
 
 body {
-	font-family: 'Source Serif Pro', serif;
-	background-color: #E5E1DA;
+  font-family: 'Source Serif Pro', serif;
+  background-color: #E5E1DA;
 
 }
 
 img {
-	max-width: 100%;
-	border-radius: 4px;
+  max-width: 100%;
+  border-radius: 4px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-style: italic;
-	font-weight: 600;
+  font-style: italic;
+  font-weight: 600;
 }
 
 h1::after {
-	content: " ";
-	width: 400px;
-	background: #bdb4a5;
-	height: 0.05rem;
-	display: block;
-	margin-top: 24px;
+  content: " ";
+  width: 400px;
+  background: #bdb4a5;
+  height: 0.05rem;
+  display: block;
+  margin-top: 24px;
 }
 
 .page {
-	padding: 24px;
-	overflow: auto;
-	margin-top: 240px;
+  padding: 24px;
+  overflow: auto;
+  margin-top: 240px;
 }
 
 .page h1:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 a {
-	color: #578E7E;
-	text-decoration: none;
+  color: #578E7E;
+  text-decoration: none;
 }
 
 a:hover {
-	color: #3D0301;
-	text-decoration: underline;
+  color: #3D0301;
+  text-decoration: underline;
 }
 
 .header-body {
-	text-align: right;
-	padding-top: 5px;
-	background-color: #ffffff00;
-	position: relative;
+  text-align: right;
+  padding-top: 5px;
+  background-color: #ffffff00;
+  position: relative;
 }
 
 .avatar {
-	width: 160px;
+  width: 160px;
 }
 
 .title {
-	font-size:50px;
-	font-style: normal;
-	font-weight: 600;
-	margin: 12px 0;
-	letter-spacing: 0.5px;
+  font-size:50px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 12px 0;
+  letter-spacing: 0.5px;
   float: right;
 }
 
@@ -79,54 +79,54 @@ a:hover {
 }
 
 .menu a {
-	display: inline-block;
-	padding: 6px;
+  display: inline-block;
+  padding: 6px;
 }
 
 .top iframe {
-	border: 0;
-	/* Edit this height if you would like the header to be taller */
-	height: 390px;
-	width: 100%
+  border: 0;
+  /* Edit this height if you would like the header to be taller */
+  height: 390px;
+  width: 100%
 }
 
 .wrapper {
-	width: 800px;
-	margin: auto;
-	margin-top: 60px;
-	box-shadow: 0 0 24px #3d382c1c;
-	background: #F1F0E8;
-	padding: 24px 60px;
-	box-sizing: border-box;
-	border-radius: 5px;
-	margin-bottom: 120px;
-	padding-bottom: 120px;
+  width: 800px;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: 0 0 24px #3d382c1c;
+  background: #F1F0E8;
+  padding: 24px 60px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 /* You can remove the CSS below if you don't care about tables (example on the about page) */
 
 table {
-	border: 1px solid #2e2e39;
-	border-collapse: collapse;
-	margin: 36px 0;
+  border: 1px solid #2e2e39;
+  border-collapse: collapse;
+  margin: 36px 0;
 }
 
 th, td {
-	padding: 12px 24px;
+  padding: 12px 24px;
 }
 
 th {
-	background: #E5E1DA;
-	font-weight: 600;
-	letter-spacing: 0.5px;
+  background: #E5E1DA;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 tr {
-	background-color: #F1F0E8;
+  background-color: #F1F0E8;
 }
 
 tr:hover {
-	background: #B3C8CF;
+  background: #B3C8CF;
 }
 
 /* my bullshit begins*/
@@ -146,8 +146,26 @@ tr:hover {
 
 
 .prose {
-	text-align: justify;
-	text-justify: inter-word;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.prose p {
+  text-indent: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* Prose in Courier New font */
+.prose-courier {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.prose-courier p {
+  text-indent: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 /* Centered image with shadow */
@@ -159,6 +177,102 @@ tr:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
+
+/* Text classes */
+.italic {
+  font-style: italic;
+}
+
+/* Spoiler class: hides text with black boxes, reveals on hover */
+.spoiler {
+  color: transparent;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+  /* Prevent text selection revealing text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.spoiler::selection {
+  background: #000;
+}
+/* Hide text with black boxes when not hovered */
+.spoiler:not(:hover) {
+  background: #000;
+  border-radius: 1px;
+  color: transparent !important;
+  text-shadow: none !important;
+  box-shadow: 0 0 0 0 #000;
+  /* Fallback for older browsers */
+}
+.spoiler:hover {
+  color: inherit;
+  background: none;
+  user-select: text;
+}
+/* spoiler end*/
+
+.bold {
+  font-style: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+/* Centered text class */
+.center-text {
+  text-align: center;
+}
+
+/* Screenplay front page style */
+.screenplay-front {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 3rem auto 2.5rem auto;
+  padding: 2.5rem 1rem 2rem 1rem;
+  max-width: 500px;
+  background: #f8f7f3;
+  border: 2px solid #bdb4a5;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.screenplay-title {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+.screenplay-by {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+.screenplay-author {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.screenplay-date {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Solid border line divider */
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 
 /*----CLAUDE BLOCKQUOTE BEGIN------*/
 .book-quote {
@@ -201,13 +315,15 @@ tr:hover {
 /* Optional: Responsive adjustments */
 @media (max-width: 768px) {
   .book-quote {
-    padding: 1.5rem 1.5rem 1.25rem 2.5rem;
+  padding: 1.5rem 1.5rem 1.25rem 2.5rem;
   }
   
   .book-quote::before {
-    font-size: 3rem;
-    left: 0.3rem;
+  font-size: 3rem;
+  left: 0.3rem;
   }
 }
 
 /*----CLAUDE BLOCKQUOTE END------*/
+
+
